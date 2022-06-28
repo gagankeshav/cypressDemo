@@ -1,0 +1,19 @@
+{
+  "name": "cypress_demo",
+  "version": "1.0.0",
+  "description": "Cypress demo project",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "keywords": [
+    "cypress",
+    "testing"
+  ],
+  "author": "Gagan Keshav",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^8.3.0"
+  }
+}
