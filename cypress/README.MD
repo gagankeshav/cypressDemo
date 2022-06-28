@@ -27,7 +27,7 @@ Helps to run the tests in headless mode on the terminal
 **`cy:run : cypress run`**
 
 ### Run Individual Spec Files:
-npx cypress run --spec 'cypress/integration/<path to spec file>'
+**`npx cypress run --spec 'cypress/integration/<path to spec file>'`**
 
 ## Folder Structure/Critical Files
 **fixtures:** configuration files used to store data to be used in the tests and for stubbing
@@ -60,3 +60,34 @@ Some useful configurations for Cypress.json file:
     after(function() {})
     beforeEach(function {})
     afterEach(function {})
+
+### Skip a test in a spec file:
+
+    it.skip
+
+### Run a specific test in a spec file:
+
+    it.only
+### Pause Test Execution
+
+    cy.pause
+
+## Selectors
+### Class
+. for class names [partial class names can also be used directly]
+### ID
+\#
+### Element Type:
+cy.get('input[type="checkbox]"') which means the tag of the element and then it's type
+### For Unique cases/no identifiers:
+cy.contains can also be used in case of a unique value attribute
+
+## XPaths
+Use below mentioned command to install the package to support xpaths:
+**`npm install cypress-xpath`**
+
+Add below code in the ***index.js*** file:
+**`require('cypress-xpath')`**
+
+Can be used in the tests as follows:
+**`cy.xpath()`**
