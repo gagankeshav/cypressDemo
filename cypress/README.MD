@@ -74,13 +74,14 @@ Some useful configurations for Cypress.json file:
 
 ## Selectors
 ### Class
-. for class names [partial class names can also be used directly]
+"." for class names [partial class names can also be used directly]
 ### ID
-\#
+"#"
 ### Element Type:
-cy.get('input[type="checkbox]"') which means the tag of the element and then it's type
+**`cy.get('input[type="checkbox]"')`**
+This means the tag of the element and then it's type
 ### For Unique cases/no identifiers:
-cy.contains can also be used in case of a unique value attribute
+**`cy.contains()`**
 
 ## XPaths
 Use below mentioned command to install the package to support xpaths:
